@@ -13,7 +13,7 @@ const calculateHash = async () => {
     const data = createHash('sha256').update(content).digest('hex');
     console.log(data);
   } catch (err) {
-    throw new Error('FS operation failed');
+    throw new Error('Operation failed');
   }
 };
 
